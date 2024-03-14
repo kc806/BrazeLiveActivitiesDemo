@@ -16,6 +16,8 @@ struct LiveActivitesExampleAttributes: ActivityAttributes {
     public struct ContentState: Codable, Hashable {
         var teamOneScore: Int
         var teamTwoScore: Int
+        var quarter: String
+        var eventDescription: String
     }
     
     var gameName: String
@@ -47,6 +49,12 @@ struct LiveActivitesExampleLiveActivity: Widget {
                             Image("live-symbol")
                                 .resizable()
                                 .frame(width: 45, height: 40)
+                                .padding(.top, 10)
+                            
+                            Text("\(context.state.quarter)")
+                                .fontWeight(.bold)
+                                .font(.system(size: 13))
+                                .padding(.bottom, 2)
                             
                             let startDate = Date()
                             let endDate = Calendar.current.date(byAdding: .minute, value: 12, to: startDate)!
@@ -56,7 +64,8 @@ struct LiveActivitesExampleLiveActivity: Widget {
                                 .multilineTextAlignment(.center)
                                 .frame(width: 50)
                                 .monospacedDigit()
-                                .font(.system(size: 17))
+                                .font(.system(size: 15))
+                                .padding(.bottom, 10)
                         }
 
                         // Score
@@ -85,16 +94,17 @@ struct LiveActivitesExampleLiveActivity: Widget {
                     
                     // Middle VStack containing game name and game information
                     VStack {
-                        // Game name
-                        Text(context.attributes.gameName)
-                            .font(.headline)
+                        // Game name and number
+                        Text("\(context.attributes.gameName) - \(context.attributes.gameNumber)")
                             .foregroundColor(Color.white)
+                            .font(.system(size: 14))
+                            .fontWeight(.bold)
+                            .padding(.bottom, 5)
                         
-                        // Game information
-                        Text(context.attributes.gameNumber)
-                            .font(.subheadline)
-                            .foregroundColor(Color.white.opacity(0.5))
-                            .padding(.bottom, 10)
+                        Text(context.state.eventDescription)
+                            .font(.system(size: 12))
+                            .foregroundColor(Color.white.opacity(0.9))
+                            .padding(.bottom, 20)
                     }
                     
                     // Right team's logo

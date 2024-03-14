@@ -64,7 +64,7 @@ class ViewController: UIViewController {
     func createLiveActivity(with pushTokenTag: String) {
         print(pushTokenTag)
       let activityAttributes = LiveActivitesExampleAttributes(gameName: "NBA Finals", gameNumber: "Game 1")
-      let contentState = LiveActivitesExampleAttributes.ContentState(teamOneScore: 0, teamTwoScore: 0)
+      let contentState = LiveActivitesExampleAttributes.ContentState(teamOneScore: 0, teamTwoScore: 0, quarter: "Q1", eventDescription: "🏀 Game on! Tip-off has commenced. Tune in now to catch the excitement!")
       let activityContent = ActivityContent(state: contentState, staleDate: nil)
       if let activity = try? Activity.request(attributes: activityAttributes,
                                               content: activityContent,
