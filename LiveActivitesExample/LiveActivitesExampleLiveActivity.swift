@@ -38,29 +38,41 @@ struct LiveActivitesExampleLiveActivity: Widget {
                             .resizable()
                             .frame(width: 70, height: 60)
                         
+                        Text("\(context.state.teamOneScore)")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .foregroundColor(Color(red: 16/255, green: 57/255, blue: 71/255))
+                            .padding(.trailing, 60) // Adjusted padding for the left side of the score
                         VStack {
-                            // Score
-                            Text("\(context.state.teamOneScore) - \(context.state.teamTwoScore)")
-                                .font(.title)
-                                .fontWeight(.bold)
-                                .padding(.horizontal, 50)
-                                .foregroundColor(Color(red: 16/255, green: 57/255, blue: 71/255))
+                            Image("live-symbol")
+                                .resizable()
+                                .frame(width: 45, height: 40)
                             
                             let startDate = Date()
-                            let endDate = Calendar.current.date(byAdding: .minute, value: 48, to: startDate)!
+                            let endDate = Calendar.current.date(byAdding: .minute, value: 12, to: startDate)!
                             let dateRange = startDate...endDate
                             
                             Text(timerInterval: dateRange, countsDown: true)
                                 .multilineTextAlignment(.center)
                                 .frame(width: 50)
                                 .monospacedDigit()
-                            
-                            
+                                .font(.system(size: 17))
                         }
+
+                        // Score
+                        Text("\(context.state.teamTwoScore)")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .padding(.leading, 50)
+                            .padding(.trailing, 5)
+                            .foregroundColor(Color(red: 16/255, green: 57/255, blue: 71/255))
+                        
+                        
                         // Right team's logo
                         Image("thunder-logo")
                             .resizable()
-                            .frame(width: 70, height: 60)
+                            .frame(width: 65, height: 55)
+                            .padding(.trailing, 10)
                     }
                     .frame(height: 100)
                 }
@@ -111,7 +123,7 @@ struct LiveActivitesExampleLiveActivity: Widget {
                     VStack {
                         // Timer
                         let startDate = Date()
-                        let endDate = Calendar.current.date(byAdding: .minute, value: 48, to: startDate)!
+                        let endDate = Calendar.current.date(byAdding: .minute, value: 12, to: startDate)!
                         let dateRange = startDate...endDate
                         
                         Text(timerInterval: dateRange, countsDown: true)

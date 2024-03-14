@@ -17,7 +17,6 @@
 		427C48722BA24CDC00DE7872 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427C48712BA24CDC00DE7872 /* SwiftUI.framework */; };
 		427C48752BA24CDC00DE7872 /* LiveActivitesExampleBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427C48742BA24CDC00DE7872 /* LiveActivitesExampleBundle.swift */; };
 		427C48772BA24CDC00DE7872 /* LiveActivitesExampleLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427C48762BA24CDC00DE7872 /* LiveActivitesExampleLiveActivity.swift */; };
-		427C48792BA24CDC00DE7872 /* LiveActivitesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427C48782BA24CDC00DE7872 /* LiveActivitesExample.swift */; };
 		427C487B2BA24CDC00DE7872 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427C487A2BA24CDC00DE7872 /* AppIntent.swift */; };
 		427C487D2BA24CDD00DE7872 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 427C487C2BA24CDD00DE7872 /* Assets.xcassets */; };
 		427C48812BA24CDD00DE7872 /* LiveActivitesExampleExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 427C486D2BA24CDC00DE7872 /* LiveActivitesExampleExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -63,7 +62,6 @@
 		427C48712BA24CDC00DE7872 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		427C48742BA24CDC00DE7872 /* LiveActivitesExampleBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivitesExampleBundle.swift; sourceTree = "<group>"; };
 		427C48762BA24CDC00DE7872 /* LiveActivitesExampleLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivitesExampleLiveActivity.swift; sourceTree = "<group>"; };
-		427C48782BA24CDC00DE7872 /* LiveActivitesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivitesExample.swift; sourceTree = "<group>"; };
 		427C487A2BA24CDC00DE7872 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
 		427C487C2BA24CDD00DE7872 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		427C487E2BA24CDD00DE7872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -141,7 +139,6 @@
 			children = (
 				427C48742BA24CDC00DE7872 /* LiveActivitesExampleBundle.swift */,
 				427C48762BA24CDC00DE7872 /* LiveActivitesExampleLiveActivity.swift */,
-				427C48782BA24CDC00DE7872 /* LiveActivitesExample.swift */,
 				427C487A2BA24CDC00DE7872 /* AppIntent.swift */,
 				427C487C2BA24CDD00DE7872 /* Assets.xcassets */,
 				427C487E2BA24CDD00DE7872 /* Info.plist */,
@@ -271,7 +268,6 @@
 				427C48772BA24CDC00DE7872 /* LiveActivitesExampleLiveActivity.swift in Sources */,
 				427C487B2BA24CDC00DE7872 /* AppIntent.swift in Sources */,
 				427C48752BA24CDC00DE7872 /* LiveActivitesExampleBundle.swift in Sources */,
-				427C48792BA24CDC00DE7872 /* LiveActivitesExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

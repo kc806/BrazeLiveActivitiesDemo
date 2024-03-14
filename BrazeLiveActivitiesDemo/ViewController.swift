@@ -63,7 +63,7 @@ class ViewController: UIViewController {
     @available(iOS 16.2, *)
     func createLiveActivity(with pushTokenTag: String) {
         print(pushTokenTag)
-      let activityAttributes = LiveActivitesExampleAttributes(gameName: "Superb Owl", gameNumber: "Game 1")
+      let activityAttributes = LiveActivitesExampleAttributes(gameName: "NBA Finals", gameNumber: "Game 1")
       let contentState = LiveActivitesExampleAttributes.ContentState(teamOneScore: 0, teamTwoScore: 0)
       let activityContent = ActivityContent(state: contentState, staleDate: nil)
       if let activity = try? Activity.request(attributes: activityAttributes,
