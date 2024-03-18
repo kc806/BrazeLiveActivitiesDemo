@@ -21,8 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         let configuration = Braze.Configuration(
-            apiKey: "201df90b-7eb8-4225-b957-39fbd16bb612",
-            endpoint: "sondheim.braze.com"
+            apiKey: "REDACTED",
+            endpoint: "REDACTED"
         )
         configuration.logger.level = .debug
         configuration.push.automation = true
